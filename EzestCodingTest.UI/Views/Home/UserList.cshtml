@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "User List";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Date Of Birth</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyUsers"></tbody>
+    </table>
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            getUserList();
+        });
+    </script>
+}
